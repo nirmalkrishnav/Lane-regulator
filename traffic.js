@@ -8,10 +8,16 @@
 
 var i = 1, lane1Speed = 2000, lane2Speed = 1500, lane3Speed = 1000;
 
+function simBegin(spd) {
+    setInterval(function () {
+        carStart();
+    }, spd);
+}
 
-setInterval(function() {
-  carStart();
-}, 100);
+function simEnd() {
+    clearInterval();
+}
+
 
 function carStart() {
     var car_id = i;
@@ -22,7 +28,7 @@ function randomchords(car_id) {
     var arr = [lane1, lane2, lane3, lane4, lane5, lane6],
         rand = Math.floor(Math.random() * 10),
         func = arr[rand];
-    func(car_id);
+    (func)(car_id);
 }
 
 //rewrite needed to pass lane id and car id along to a single function
