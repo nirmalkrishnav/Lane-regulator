@@ -9,6 +9,8 @@
 var i = 1, lane1Speed = 2000, lane2Speed = 1500, lane3Speed = 1000;
 
 function simBegin(spd) {
+    $('#start-button').prop('disabled', true);
+       $('#stop-button').prop('disabled', false);
     setInterval(function () {
         carStart();
     }, spd);
