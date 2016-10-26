@@ -1,0 +1,24 @@
+.road{
+display: inline-flex;
+background: #dedede;
+height: 500px;
+width: 100px;
+}
+.car{
+        top: -100px;
+position: absolute;
+height:50px;
+width:30px;
+margin: 10px;
+background: red;
+
+}
+.car2{
+top: 450px;
+position: absolute;
+height:50px;
+width:30px;
+margin: 10px;
+background: red;
+
+}
